@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 11, 1, LIC=32B1Q-NMGY6-HL9CL-0GIUL-0PQ1J-BCZ6X
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.12.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+E:\Code\STM32CODE\LED-REG_2\LED-REG.uvprojx
+Project File Date:  11/16/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'D:\Keil5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+main.c(10): warning: In file included from...
+./stm32f4xx.h(25): warning: no newline at end of file [-Wnewline-eof]
+#define RCC_AHB1ENR     *(unsigned int *)(RCC_BASE+0x30)
+                                                        ^
+main.c(13): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+void delay(unsigned int count)
+     ^
+main.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay(unsigned int count)
+^
+static 
+main.c(21): warning: // comments are not allowed in this language [-Wcomment]
+    // 1.开启GPIO端口时钟
+    ^
+main.c(25): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOF_MODER &= ~(3<<(2*6));
+                ~~ ^~~~~~~~~~~
+main.c(28): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOF_MODER &= ~(3<<(2*7));
+                ~~ ^~~~~~~~~~~
+main.c(38): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOF_ODR &= ~(1<<6);
+                  ~~ ^~~~~~~
+main.c(43): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOF_ODR &= ~(1<<7);
+                  ~~ ^~~~~~~
+main.c(59): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+void SystemInit(void)
+     ^
+main.c(59): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit(void)
+^
+static 
+8 warnings generated.
+compiling main.c...
+assembling startup_stm32f40xx.s...
+linking...
+Program Size: Code=320 RO-data=408 RW-data=0 ZI-data=1024  
+".\Objects\LED-REG.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Keil5/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

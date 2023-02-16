@@ -1,0 +1,4 @@
+--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\User -I ..\..\User\key -I ..\..\User\led -I ..\..\User\systick -I ..\..\User\usart
+-ID:\Keil5\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx
+-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d "..\..\User\main.c"

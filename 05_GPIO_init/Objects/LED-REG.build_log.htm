@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 11, 1, LIC=32B1Q-NMGY6-HL9CL-0GIUL-0PQ1J-BCZ6X
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.12.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+E:\Code\STM32CODE\05_GPIO_init\LED-REG.uvprojx
+Project File Date:  12/04/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'D:\Keil5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+stm32f4xx_gpio.c(9): warning: In file included from...
+./stm32f4xx_gpio.h(12): warning: In file included from...
+./stm32f4xx.h(30): warning: // comments are not allowed in this language [-Wcomment]
+// 外设寄存器结构体定义
+^
+./stm32f4xx.h(52): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+stm32f4xx_gpio.c(9): warning: In file included from...
+./stm32f4xx_gpio.h(66): warning: // comments are not allowed in this language [-Wcomment]
+// 定义初始化结构体
+^
+stm32f4xx_gpio.c(43): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        GPIOx->MODER  &= ~(3 << (2 *pinpos));
+                                      ~~ ^~~~~~~~~~~~~~~~~~~
+stm32f4xx_gpio.c(49): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        GPIOx->PUPDR &= ~(3 << ((2 *pinpos)));
+                                     ~~ ^~~~~~~~~~~~~~~~~~~~~
+stm32f4xx_gpio.c(58): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                GPIOx->OSPEEDR &= ~(3 << (2 *pinpos));
+                                               ~~ ^~~~~~~~~~~~~~~~~~~
+6 warnings generated.
+compiling stm32f4xx_gpio.c...
+main.c(12): warning: In file included from...
+./stm32f4xx.h(30): warning: // comments are not allowed in this language [-Wcomment]
+// 外设寄存器结构体定义
+^
+./stm32f4xx.h(52): warning: no newline at end of file [-Wnewline-eof]
+#endif 
+       ^
+main.c(13): warning: In file included from...
+./stm32f4xx_gpio.h(66): warning: // comments are not allowed in this language [-Wcomment]
+// 定义初始化结构体
+^
+main.c(15): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+void delay(unsigned int count)
+     ^
+main.c(15): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay(unsigned int count)
+^
+static 
+main.c(60): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+    GPIO_InitTypeDef GPIO_InitStruct;
+                     ^
+main.c(97): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+void SystemInit(void)
+     ^
+main.c(97): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit(void)
+^
+static 
+6 warnings generated.
+compiling main.c...
+assembling startup_stm32f40xx.s...
+linking...
+Program Size: Code=548 RO-data=408 RW-data=0 ZI-data=1024  
+".\Objects\LED-REG.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Keil5/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
